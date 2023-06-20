@@ -28,12 +28,12 @@ const app = Vue.createApp({
             id: 5
             }],  
             
-
         }
     },
     
     methods:{
-        deleteTask()  
+        /* FUNZIONE CHE ELIMINA LA TASK */
+        deleteTask(id)  
         {let updateTasks = this.tasks.filter((task) => task.id !== id);
         this.tasks = updateTasks;
       }
