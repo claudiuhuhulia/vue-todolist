@@ -10,8 +10,20 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- MAIN JS -->
     <script defer src="main.js"></script>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="root">
+        <header>
+           <h1 class="text-center my-3">TODO LIST</h1>
+        </header>
+        <div class="container w-25">
+        <ul class="list-group">
+            <li v-for="task in tasks" class="list-group-item">{{task.text}}</li>
+          </ul>
+        </div>
+    </div>
     
 </body>
 </html>
