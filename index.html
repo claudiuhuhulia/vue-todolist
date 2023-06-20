@@ -20,7 +20,7 @@
         </header>
         <div class="container w-25">
         <ul class="list-group">
-            <li v-for="task in tasks" class="list-group-item">{{task.text}}</li>
+            <li v-for="task in tasks" class="list-group-item" :class="{'text-decoration-line-through': task.done === true}">{{task.text}}</li>
           </ul>
         </div>
     </div>
