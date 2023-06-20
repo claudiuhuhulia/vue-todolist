@@ -27,8 +27,8 @@
             <button @click="deleteTask(task.id)" type="button" class="btn-close" aria-label="Close"></button></li>
           </ul>
           <div class="input-group my-2">
-            <input v-model.trim="newTask" type="text" class="form-control" placeholder="Inserisci qui la nuova task" >
-            <button class="btn btn-outline-secondary " type="button" @click="addTask">Aggiungi</button>
+            <input v-model.trim="newTask" @keyup.enter="addTask" type="text" class="form-control" placeholder="Inserisci qui la nuova task" >
+            <button class="btn btn-outline-secondary " type="button" @click="addTask" >Aggiungi</button>
           </div>
         </div>
     </div>

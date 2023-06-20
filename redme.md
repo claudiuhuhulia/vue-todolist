@@ -22,5 +22,6 @@ Questa volta però ogni todo sarà un oggetto, formato da almeno due proprietà:
 - Aggiungo al DOM un input text dinamico e un button. 
     - Creo una function *nextId*, che mi tenga traccia del prossimo id.
     - Creo la function **addTask** che aggiunga all'array *tasks* il nuovo oggetto, lo collego al button del DOM.
+    - Usando la sintassi *@keyup.enter* richiamiamo la funzione **addTask** per aggiungere la task al click del tasto *Enter*.
                 
 
